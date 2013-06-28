@@ -418,6 +418,18 @@ select.docNav {
     position: relative;
     margin: 0 auto;
   }
+  header#main-header .max-width {
+    top: -10px;
+  }
+  #main-header nav li a {
+    font-size: 22px;
+  }
+  #main-header nav li {
+    margin: 0 25px;
+  }
+  #download-btn {
+    display: inline-block;
+  }
 }
 
 
