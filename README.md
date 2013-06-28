@@ -1,3 +1,13 @@
 #Usage Guide Theme
 
-A responsive [StyleDocco](http://jacobrask.github.io/styledocco/) theme for the Topcoat Usage Guide.
+A responsive [Topdoc](http://github.io/topcoat/topdoc) theme for the Topcoat Usage Guide.
+
+##Usage
+
+If the topcoat repo is cloned locally as a sibling of this repo, running the following command:
+
+```bash
+topdoc -s release/css/ -d topdocs -t ../topdoc-template/
+```
+
+Uses the template and generates the docs to a directory called `topdocs`.
