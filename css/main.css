@@ -62,7 +62,7 @@ pre {
   height: 98px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-top: 10px;
+  padding: 10px 20px;
   position: relative;
 }
 #main-header hgroup {
@@ -261,6 +261,7 @@ body.dark #content header:before {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px;
+  display: block;
 }
 #pageNav li {
   border-bottom: 1px solid #58595A;
@@ -284,4 +285,83 @@ select.docNav {
   padding: 20px;
   -webkit-appearance: none;
 }
+@media screen and (min-width: 650px) {
+  #site.open {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  #main-header nav {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 40px;
+  }
+  #main-header ul {
+    list-style: none;
+  }
+  #main-header nav li {
+    display: inline-block;
+    margin: 0 18px;
+  }
+  #main-header nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #7F7F7F;
+  }
+  #main-header nav li.selected a {
+    color: #373435;
+  } 
+  #slide-menu-button{
+    display: none;
+  }
+  #main-header hgroup {
+    text-align: left;
+    position: absolute;
+    display: inline-block;
+    top: 24px;
+  }
+  #main-header hgroup h1 {
+    font-size: 60px;
+    letter-spacing: -.065em;
+    line-height: 1.1em;
+  }
+  #main-header hgroup p {
+    font-size: 15px;
+  }
+  #main-header {
+    color: #373435;
+    background: #fff;
+    height: 148px;
+  }
+  #download-btn {
+    display: none;
+  }
+  #content {
+    padding-left: 240px;
+  }
+  /* Side Nav */
+  #sideNav {
+    background: transparent;
+    width: 220px;
+    z-index: 20;
+    left: 10px;
+    top: 150px;
+  }
+  #sideNav nav.site {
+    display: none;
+  }
+  #sideNav li a {
+    padding: 12px 0 0 10px;
+  }
+  body.light #sideNav li a {
+    color: #797B7B;
+  }
+  body.light #pageNav li {
+    border-bottom: 1px solid #E0E0E0;
+  }
+}
+
+
+
+
 
