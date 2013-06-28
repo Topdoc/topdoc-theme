@@ -20,41 +20,43 @@ html
 			script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')
 	body(class=tint)
 		#wrapper
-			#sideNav
-				nav.site: ul
-					- each siteNavItem, i in siteNav
-						- if(i == 1)
-							li.selected: a(href=siteNavItem.url)=siteNavItem.text
-						- else
-							li: a(href=siteNavItem.url)=siteNavItem.text
-				div.combo
-					select.docNav
-						- each item in nav
-							- if(item.url == document.url)
-								option(value=item.url, selected="selected")=item.title
+			.max-width
+				#sideNav
+					nav.site: ul
+						- each siteNavItem, i in siteNav
+							- if(i == 1)
+								li.selected: a(href=siteNavItem.url)=siteNavItem.text
 							- else
-								option(value=item.url)=item.title
-				#pageNav: ul
-					- each component in document.components
-						li: a(href='#'+component.slug)=component.name
+								li: a(href=siteNavItem.url)=siteNavItem.text
+					div.combo
+						select.docNav
+							- each item in nav
+								- if(item.url == document.url)
+									option(value=item.url, selected="selected")=item.title
+								- else
+									option(value=item.url)=item.title
+					#pageNav: ul
+						- each component in document.components
+							li: a(href='#'+component.slug)=component.name
 			#site
 				header#main-header
-					hgroup
-						h1=project.title
-						p CSS for clean and fast web apps
-					nav
-						ul
-							- each siteNavItem, i in siteNav
-								- if(i == 0)
-									| <!-- home -->
-								- else if(i == 1)
-									li.selected: a(href=siteNavItem.url)=siteNavItem.text
-								- else
-									li: a(href=siteNavItem.url)=siteNavItem.text
-						#download-btn Download version 0.3
-					a#slide-menu-button.topcoat-icon-button--large--quiet
-						span.topcoat-icon--large.topcoat-icon--menu-stack
-				#content
+					.max-width
+						hgroup
+							h1=project.title
+							p CSS for clean and fast web apps
+						nav
+							ul
+								- each siteNavItem, i in siteNav
+									- if(i == 0)
+										| <!-- home -->
+									- else if(i == 1)
+										li.selected: a(href=siteNavItem.url)=siteNavItem.text
+									- else
+										li: a(href=siteNavItem.url)=siteNavItem.text
+							#download-btn Download version 0.3
+						a#slide-menu-button.topcoat-icon-button--large--quiet
+							span.topcoat-icon--large.topcoat-icon--menu-stack
+				#content.max-width
 					- each component in document.components
 						article.component(id=component.slug)
 							header
