@@ -7,7 +7,7 @@ A responsive [Topdoc](http://github.io/topcoat/topdoc) theme for the Topcoat Usa
 If the topcoat repo is cloned locally as a sibling of this repo, running the following command:
 
 ```bash
-topdoc -s release/css/ -d topdocs -t ../topdoc-template/
+topdoc -s release/css/ -d topdocs -t ../usage-guide-theme/
 ```
 
 Uses the template and generates the docs to a directory called `topdocs`.
