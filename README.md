@@ -2,6 +2,7 @@
 
 A responsive [Topdoc](http://github.io/topcoat/topdoc) theme for the Topcoat Usage Guide.
 
+
 ##Usage
 
 If the topcoat repo is cloned locally as a sibling of this repo, running the following command:
