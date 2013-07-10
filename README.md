@@ -1,6 +1,6 @@
 #Usage Guide Theme
 
-A responsive [Topdoc](http://github.io/topcoat/topdoc) theme for the Topcoat Usage Guide.
+A responsive [Topdoc](https://github.com/topcoat/topdoc) theme for the Topcoat Usage Guide.
 
 
 ##Usage
