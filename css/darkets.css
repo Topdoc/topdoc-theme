@@ -17,3 +17,11 @@ pre .regexp {
 pre .vendor-prefix {
     color: #FFF;
 }
+
+pre .constant.numeric, pre .keyword.unit {
+    color: #88D527;
+}
+
+pre .attribute, pre .variable {
+    color: #88D527;
+}
