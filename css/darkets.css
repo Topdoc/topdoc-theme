@@ -1,0 +1,11 @@
+pre, code {
+    color: #FFF;
+}
+
+pre .css-property {
+    color: #AD70DD;
+}
+
+pre .string, pre .support.value  {
+    color: #AD70DD;
+}
