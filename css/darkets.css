@@ -9,3 +9,11 @@ pre .css-property {
 pre .string, pre .support.value  {
     color: #AD70DD;
 }
+
+pre .regexp {
+    color: #FFF;
+}
+
+pre .vendor-prefix {
+    color: #FFF;
+}
