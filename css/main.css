@@ -358,6 +358,7 @@ select.docNav {
   #sideNav .combo {
     border-bottom: none;
     padding: 36px 0;
+    position: relative;
   }
   #sideNav li a {
     padding: 12px 0 0 10px;
@@ -385,6 +386,16 @@ select.docNav {
     color: #454545;
     text-shadow: 0 -1px 0 #FFF;
     width: 192px;
+  }
+  .combo .arrows {
+    background: url(../../img/pop-up-triangle.png) no-repeat #595B5B center;
+    padding: 0;
+    height: 20px;
+    width: 16px;
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    pointer-events: none;
   }
 }
 @media screen and (min-width: 880px) {
