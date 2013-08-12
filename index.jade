@@ -50,7 +50,7 @@ html
 										li.selected: a(href=siteNavItem.url)=siteNavItem.text
 									- else
 										li: a(href=siteNavItem.url)=siteNavItem.text
-								li: a#download-btn(href=templateData.download.url)=templateData.download.label
+								li: a#download-btn(href=templateData.download.url, onclick="_gaq.push(['_trackEvent', 'download', 'click',,, false]);")=templateData.download.label
 						a#slide-menu-button.topcoat-icon-button--large--quiet
 							span.topcoat-icon--large.topcoat-icon--menu-stack
 				#content.max-width
