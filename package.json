@@ -1,0 +1,37 @@
+{
+  "name": "topdoc-theme",
+  "version": "0.2.0",
+  "description": "Topdoc Theme for the Topcoat Demo documentation",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/topcoat/topdoc-theme.git"
+  },
+  "keywords": [
+    "topdoc",
+    "topcoat",
+    "theme",
+    "template",
+    "css",
+    "documentation"
+  ],
+  "author": "Garth Braithwaite <garthdb@gmail.com> (http://www.garthdb.com)",
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "readmeFilename": "README.md",
+  "gitHead": "58eac60122954fff276592dace1f8fe7d444600b",
+  "bugs": {
+    "url": "https://github.com/topcoat/topdoc-theme/issues"
+  },
+    "devDependencies": {
+      "mocha": "~1.11.0",
+      "should": "~1.2.2",
+      "jade": "~0.31.2"
+  }
+}
