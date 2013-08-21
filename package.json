@@ -1,6 +1,6 @@
 {
   "name": "topdoc-theme",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Topdoc Theme for the Topcoat Demo documentation",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,9 +29,9 @@
   "bugs": {
     "url": "https://github.com/topcoat/topdoc-theme/issues"
   },
-    "devDependencies": {
-      "mocha": "~1.11.0",
-      "should": "~1.2.2",
-      "jade": "~0.31.2"
+  "devDependencies": {
+    "mocha": "~1.11.0",
+    "should": "~1.2.2",
+    "jade": "~0.31.2"
   }
 }
