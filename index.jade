@@ -20,11 +20,12 @@ html
 				#sideNav
 					nav.site: ul
 						li: a(href=templateData.homeURL) Home
-						- each siteNavItem, i in templateData.siteNav
-							- if(i == 0)
-								li.selected: a(href=siteNavItem.url)=siteNavItem.text
-							- else
-								li: a(href=siteNavItem.url)=siteNavItem.text
+						-if(templateData.siteNav)
+							- each siteNavItem, i in templateData.siteNav
+								- if(i == 0)
+									li.selected: a(href=siteNavItem.url)=siteNavItem.text
+								- else
+									li: a(href=siteNavItem.url)=siteNavItem.text
 					div.combo
 						select.docNav
 							- each item in nav
@@ -43,12 +44,14 @@ html
 							p=templateData.subtitle
 						nav
 							ul
-								- each siteNavItem, i in templateData.siteNav
-									- if(i == 0)
-										li.selected: a(href=siteNavItem.url)=siteNavItem.text
-									- else
-										li: a(href=siteNavItem.url)=siteNavItem.text
-								li: a#download-btn(href=templateData.download.url, onclick="_gaq.push(['_trackEvent', 'download', 'click',,, false]);")=templateData.download.label
+								-if(templateData.siteNav)
+									- each siteNavItem, i in templateData.siteNav
+										- if(i == 0)
+											li.selected: a(href=siteNavItem.url)=siteNavItem.text
+										- else
+											li: a(href=siteNavItem.url)=siteNavItem.text
+								- if(templateData.download)
+									li: a#download-btn(href=templateData.download.url, onclick="_gaq.push(['_trackEvent', 'download', 'click',,, false]);")=templateData.download.label
 						a#slide-menu-button.topcoat-icon-button--large--quiet
 							span.topcoat-icon--large.topcoat-icon--menu-stack
 				#content.max-width
