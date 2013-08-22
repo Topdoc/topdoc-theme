@@ -56,7 +56,7 @@ html
 						article.component(id=component.slug)
 							header
 								h2=component.name
-							section.component.tada!=component.markup
+							section.component!=component.markup
 							footer
 								div.showcode
 									a(href="#") Show code snippets
@@ -64,7 +64,7 @@ html
 									div
 										h3 HTML
 										pre.html
-											code(data-language="html")=component.html
+											code(data-language="html")=component.markup
 									div
 										h3 CSS
 										pre.css
