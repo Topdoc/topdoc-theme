@@ -12,8 +12,6 @@ html
 		link(rel = 'stylesheet', type = 'text/css', href = document.relativeSource)
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/main.css')
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/brackets.css')
-		- if(tint == 'dark')
-			link(rel = 'stylesheet', type = 'text/css', href = 'css/darkets.css')
 		//if lt IE 9
 			script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')
 	body(class=tint)
@@ -41,7 +39,7 @@ html
 				header#main-header
 					.max-width
 						hgroup
-							h1=project.title
+							h1: a(href=templateData.homeURL)=project.title
 							p=templateData.subtitle
 						nav
 							ul
@@ -58,7 +56,7 @@ html
 						article.component(id=component.slug)
 							header
 								h2=component.name
-							section.component!=component.html
+							section.component!=component.markup
 							footer
 								div.showcode
 									a(href="#") Show code snippets
@@ -66,12 +64,12 @@ html
 									div
 										h3 HTML
 										pre.html
-											code(data-language="html")=component.html
+											code(data-language="html")=component.markup
 									div
 										h3 CSS
 										pre.css
 											code(data-language="css")=component.css
 				footer
-		script(src="//use.edgefonts.net/source-sans-pro:n3,n4,n6;source-code-pro:n3.js")
+		script(src="//use.edgefonts.net/source-sans-pro:n3,n4,n6;source-code-pro:n4.js")
 		script(src="js/rainbow-custom.min.js")
 		script(src='js/main.js')
