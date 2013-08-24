@@ -63,9 +63,10 @@ html
 							section.component!=component.markup
 							- if(component.examples)
 								section.examples
+									h4 Examples
 									ul
-									- each example_url, example_text in component.examples
-										li: a(href = example_url)!= example_text
+										- each example_url, example_text in component.examples
+											li: a(href = example_url)!= example_text
 							footer
 								div.showcode
 									a(href="#") Show code snippets
