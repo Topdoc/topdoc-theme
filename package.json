@@ -1,6 +1,6 @@
 {
   "name": "topdoc-theme",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Topdoc Theme for the Topcoat Demo documentation",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
