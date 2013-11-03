@@ -56,16 +56,107 @@ html
 						a#slide-menu-button.topcoat-icon-button--large--quiet
 							span.topcoat-icon--large.topcoat-icon--menu-stack
 				#content.max-width
-						article.component
+					article.component
+						div.showcase(style="width:300px; float:left; margin-right: 50px; margin-bottom: 50px")
 							div(class="topcoat-navigation-bar")
 								div(class="topcoat-navigation-bar__item left quarter")
 									span(class="topcoat-icon-button--quiet")
-										i(class="topcoat-icon--menu-stack")
+										span(class="topcoat-icon", style="background-color:#A5A7A7;")
 								div(class="topcoat-navigation-bar__item center half")
-									span(class="topcoat-navigation-bar__title")
+									span(class="topcoat-navigation-bar__title") Title
 								div(class="topcoat-navigation-bar__item right quarter")
 									span(class="topcoat-icon-button--quiet")
-										i(class="topcoat-icon--menu-stack")
+										span(class="topcoat-icon", style="background-color:#A5A7A7;")
+							div.topcoat-list
+								h3.topcoat-list__header Category
+								ul.topcoat-list__container
+									li.topcoat-list__item Item
+									li.topcoat-list__item Item
+								h3.topcoat-list__header Category
+								ul.topcoat-list__container
+									li.topcoat-list__item Item
+									li.topcoat-list__item Item
+									li.topcoat-list__item Item
+								h3.topcoat-list__header Category
+								ul.topcoat-list__container
+									li.topcoat-list__item Item
+									li.topcoat-list__item Item
+									li.topcoat-list__item Item
+									li.topcoat-list__item Item
+							div.topcoat-tab-bar.full
+								label.topcoat-tab-bar__item
+									input(type="radio", name="tab-bar")
+									button.topcoat-tab-bar__button.full One
+								label.topcoat-tab-bar__item
+									input(type="radio", name="tab-bar")
+									button.topcoat-tab-bar__button.full Two
+								label.topcoat-tab-bar__item
+									input(type="radio", name="tab-bar")
+									button.topcoat-tab-bar__button.full Three
+						div.showcase(style="width:300px; float:left; margin-right: 50px; margin-bottom: 50px")
+							div(class="topcoat-navigation-bar")
+								div(class="topcoat-navigation-bar__item left quarter")
+									span(class="topcoat-icon-button--quiet")
+										span(class="topcoat-icon", style="background-color:#A5A7A7;")
+								div(class="topcoat-navigation-bar__item center half")
+									span(class="topcoat-navigation-bar__title") Title
+								div(class="topcoat-navigation-bar__item right quarter")
+									span(class="topcoat-icon-button--quiet")
+										span(class="topcoat-icon", style="background-color:#A5A7A7;")
+							div.topcoat-list
+								h3.topcoat-list__header
+									input.topcoat-search-input.full(placeholder="Search")
+								h3.topcoat-list__header
+									input(type="text", class="topcoat-text-input full", placeholder="text", value="")
+								ul.topcoat-list__container
+									li.topcoat-list__item
+										span Notification
+										span.topcoat-notification(style="float: right") 1
+									li.topcoat-list__item
+										span Radio Button
+										span(style="float: right")
+											label.topcoat-radio-button
+												input(type="radio", name="topcoat")
+												div.topcoat-radio-button__checkmark
+											label.topcoat-radio-button OR
+												input(type="radio", name="topcoat")
+												div.topcoat-radio-button__checkmark
+									li.topcoat-list__item	
+										span Checkbox
+										span(style="float: right")
+											label.topcoat-checkbox
+												input(type="checkbox")
+												div.topcoat-checkbox__checkmark											  											
+									li.topcoat-list__item	
+										span Switch
+										span(style="float: right")
+											label.topcoat-switch
+												input(type="checkbox", class="topcoat-switch__input")
+												div.topcoat-switch__toggle										
+									li.topcoat-list__item	
+										span Range
+										span(style="float: right")
+											input(type="range", class="topcoat-range")
+								h3.topcoat-list__header Button									
+								ul.topcoat-list__container
+									li.topcoat-list__item
+										button.topcoat-button Button
+										button.topcoat-button--cta Button cta
+								h3.topcoat-list__header Quiet Button
+								ul.topcoat-list__container
+									li.topcoat-list__item
+										button.topcoat-button--quiet Button									
+							div.topcoat-tab-bar.full
+								label.topcoat-tab-bar__item
+									input(type="radio", name="tab-bar")
+									button.topcoat-tab-bar__button.full One
+								label.topcoat-tab-bar__item
+									input(type="radio", name="tab-bar")
+									button.topcoat-tab-bar__button.full Two
+								label.topcoat-tab-bar__item
+									input(type="radio", name="tab-bar")
+									button.topcoat-tab-bar__button.full Three
+						div(style="clear: both")
 					- each component in document.components
 						article.component(id=component.slug)
 							header
