@@ -56,6 +56,16 @@ html
 						a#slide-menu-button.topcoat-icon-button--large--quiet
 							span.topcoat-icon--large.topcoat-icon--menu-stack
 				#content.max-width
+						article.component
+							div(class="topcoat-navigation-bar")
+								div(class="topcoat-navigation-bar__item left quarter")
+									span(class="topcoat-icon-button--quiet")
+										i(class="topcoat-icon--menu-stack")
+								div(class="topcoat-navigation-bar__item center half")
+									span(class="topcoat-navigation-bar__title")
+								div(class="topcoat-navigation-bar__item right quarter")
+									span(class="topcoat-icon-button--quiet")
+										i(class="topcoat-icon--menu-stack")
 					- each component in document.components
 						article.component(id=component.slug)
 							header
