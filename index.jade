@@ -86,10 +86,11 @@ html
 			function downloadJSAtOnload() {
 				var rainbowjselement = document.createElement("script");
 				rainbowjselement.src = "js/rainbow-custom.min.js";
+				rainbowjselement.type = "text/javascript";
 				document.body.appendChild(rainbowjselement);
-
 				var mainjselement = document.createElement("script");
 				mainjselement.src = 'js/main.js';
+				mainjselement.type = "text/javascript";
 				document.body.appendChild(mainjselement);
 			}
 			// Check for browser support of event handling capability
