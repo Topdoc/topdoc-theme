@@ -80,5 +80,20 @@ html
 									//- 	pre.css
 									//- 		code(data-language="css")=component.css
 				footer
-		script(src="js/rainbow-custom.min.js")
-		script(src='js/main.js')
+		script(type="text/javascript").
+			// Add a script element as a child of the body
+			function downloadJSAtOnload() {
+				var rainbowjselement = document.createElement("script");
+				rainbowjselement.src = "/js/rainbow-custom.min.js";
+				document.body.appendChild(rainbowjselement);
+
+				var mainjselement = document.createElement("script");
+				mainjselement.src = 'js/main.js';
+				document.body.appendChild(mainjselement);
+			}
+			// Check for browser support of event handling capability
+			if (window.addEventListener)
+				window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+				window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
