@@ -29,7 +29,7 @@ html
 				#sideNav
 					nav.site: ul
 						li: a(href="http://www.topcoat.io") Home
-						-if(templateData.siteNav)
+						-if(templateData && templateData.siteNav)
 							- each siteNavItem, i in templateData.siteNav
 								- if(i == 0)
 									li.selected: a(href=siteNavItem.url)=siteNavItem.text
@@ -53,13 +53,13 @@ html
 							p CSS for clean and fast web apps
 						nav
 							ul
-								-if(templateData.siteNav)
+								-if(templateData && templateData.siteNav)
 									- each siteNavItem, i in templateData.siteNav
 										- if(i == 0)
 											li.selected: a(href=siteNavItem.url)=siteNavItem.text
 										- else
 											li: a(href=siteNavItem.url)=siteNavItem.text
-								- if(templateData.download)
+								- if(templateData && templateData.download)
 									li: a#download-btn(href=templateData.download.url, onclick="_gaq.push(['_trackEvent', 'download', 'click',,, false]);")=templateData.download.label
 						a#slide-menu-button.topcoat-icon-button--large--quiet
 							span.topcoat-icon--large.topcoat-icon--menu-stack
