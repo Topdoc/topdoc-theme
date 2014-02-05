@@ -31,7 +31,10 @@ html
 			.max-width
 				#sideNav
 					nav.site: ul
-						li: a(href=templateData.homeURL) Home
+						-if(templateData.homeURL)
+							li: a(href=templateData.homeURL) Home
+						-else
+							li: a(href="http://www.topcoat.io") Home
 						-if(templateData.siteNav)
 							- each siteNavItem, i in templateData.siteNav
 								- if(i == 0)
