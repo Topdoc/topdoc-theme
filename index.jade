@@ -52,7 +52,10 @@ html
 				header#main-header
 					.max-width
 						hgroup
-							h1: a(href=templateData.homeURL)=project.title
+							-if(templateData.homeURL && project.title)
+								h1: a(href=templateData.homeURL)=project.title
+							-else
+								h1: a(href="http://topcoat.io") Topcoat
 							-if(templateData.subtitle)
 								p=templateData.subtitle
 							-else
