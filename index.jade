@@ -69,7 +69,7 @@ html
 							header
 								h2=component.name
 							- if(component.iframe)
-								section.component!=component.filename
+								iframe.componentframe(src=component.filename)
 							- else
 								section.component!=component.markup
 							- if(component.examples)
