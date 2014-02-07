@@ -68,7 +68,10 @@ html
 						article.component(id=component.slug)
 							header
 								h2=component.name
-							section.component!=component.markup
+							- if(component.iframe)
+								section.component!=component.filename
+							- else
+								section.component!=component.markup
 							- if(component.examples)
 								section.examples
 									h4 Examples
