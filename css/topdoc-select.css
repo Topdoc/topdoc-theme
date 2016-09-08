@@ -55,13 +55,13 @@
     :focus: Focused
     :invalid: Hover state
   markup:
-    <select class="topcoat-select">
+    <select class="topdoc-select">
       <option value="volvo">Volvo</option>
       <option value="saab">Saab</option>
       <option value="mercedes">Mercedes</option>
       <option value="audi">Audi</option>
     </select>
-    <select class="topcoat-select" disabled>
+    <select class="topdoc-select" disabled>
       <option value="volvo">Volvo</option>
       <option value="saab">Saab</option>
       <option value="mercedes">Mercedes</option>
