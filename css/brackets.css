@@ -67,3 +67,7 @@ pre .string, pre .support.value  {
 pre .regexp {
     color: #535353;
 }
+
+pre .js {
+    display: none;
+}
